@@ -1,7 +1,7 @@
 # TIL Day 01
 
 >2022년 12월 01일 목요일
-
+>>github puch 연습해보려고 수정합니다. 
 ## Why Git & Github?
 
 ---
