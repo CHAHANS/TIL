@@ -197,3 +197,33 @@ def transpose(A):
             row.append(val)
         C.append(row)
     return C
+
+def diag(A):
+    """
+    행렬의 대각 행렬
+    입력값: 대각 행렬을 구하고자 하는 행렬 A
+    출력값: 행렬 A의 대각행렬 D
+    """
+    D=[]
+    for i in range(n):
+        pwd=[]
+        for j in range(p):
+            if i==j:
+                pwd.append(A[i][j])
+            else:
+                pwd.append(0)
+        D.append(pwd)
+    return D
+
+def diag_ele(A):
+    """ 
+    행렬의 대각원소 구하기
+    입력값: 대각원소를 구하고자 하는 행렬 A
+    출력값: 행렬 A의 원소리스트 d
+    """
+    n = len(A)
+    p = len(A[0])
+    d = []
+    for i in range(n):
+        d.append(A[i][i])
+    return d
