@@ -5,3 +5,5 @@
     git config list로 확인 후 git config user.email `email주소`로 다시설정
 - 해결(2) : rebase 하는 방법  블록참고
 [참고](https://wellbell.tistory.com/43)git
+
+## git 용량 확대..
