@@ -67,5 +67,7 @@ async def root():
     return {"message": "Hello World"}
 
 ```
+## 기능들
+- git에 들어가니 한국어로 된 docs를 제공하는걸 확인했다. [한국어DOCS](https://github.com/tiangolo/fastapi/tree/master/docs/ko/docs/tutorial)
+- 내가 구현해본 것들 순서로 정리해보고자 한다.
 
-4. 반응형 데이터 입출력 만들기
