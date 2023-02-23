@@ -36,16 +36,16 @@
 - wheel grop은 sudo, su를 위한 것
 
 3. 경로에 ip입력
-```
-sudo usermod -aG sudo $USER
-sudo usermod -aG docker $USER
-```
-```
-echo '' >> ~/.profile
-echo '# set DOCKER_HOST for docker default context' >> ~/.profile
-echo 'wsl_ip=$(ip addr show eth0|grep -oP "(?<=inet\s)\d+(\d+){3}")' >> ~/.profile
-echo 'export DOCKER_HOST=tcp://$wsl_ip:2375' >> ~/.profile
-```
+    ```
+    sudo usermod -aG sudo $USER
+    sudo usermod -aG docker $USER
+    ```
+    ```
+    echo '' >> ~/.profile
+    echo '# set DOCKER_HOST for docker default context' >> ~/.profile
+    echo 'wsl_ip=$(ip addr show eth0|grep -oP "(?<=inet\s)\d+(\d+){3}")' >> ~/.profile
+    echo 'export DOCKER_HOST=tcp://$wsl_ip:2375' >> ~/.profile
+    ```
 
 4. 실행
     (1) 첫 실행
@@ -95,5 +95,7 @@ echo 'export DOCKER_HOST=tcp://$wsl_ip:2375' >> ~/.profile
 # Docker를 이용해서 Linux 익숙해지기
 - docker를 이용해 ubuntu container를 다운로드
 
-
+- nslookup 설치
+- sudo apt-get install dnsutils
 명령어나 개념을 추가로 정리할 필요가 있다.
+
