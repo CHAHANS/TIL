@@ -93,26 +93,48 @@ IPv4 주소 . . . . . . . . . : 10.10.221.167\
     
     2. Port(포트)
         - ? : 외부와 통신해야 하는 process가 생성되면 함께 생성되는 주소
-        - TCP/IP(통신) OSI7. 물데네트표응
+        - TCP/IP(통신) OSI7 layer. 물데네트표응\
+            세션+표현+응용 : 웹 어플리케이션 외부와 통신 process\
+            전송 : port를 갖는다. prot와 process는 binding 되어 있다. (TCP/UDP)도 있다는데..\
+            네트워크 : IP주소\
+            데이터 : MAC주소\
+            물리 : 랜선\
+
         - 네트워크(IP) -> 전송/트렌스포즈(Port)
         - [IP/Port] 형식으로 만들어서 전달
         - process 1개당 1개의 Port와 [IT/Port]와 바인딩 되어 사용
-
+        - http의 포는 80, https의 포트는 443 
     3. NAPT란?
         - IP주소 뿐 아니라 포트 번호까지 포함시켜 내부 호스트를 구분
         - PC, [IP/Prot] -> 공유기, NAPT[IP/Port(Rnadom)] -> 외부
         
     4. Port Forwarding
+        - IP공유기 ~:50000 -> server: 사설 IP ~:5000 이렇게 지정해주면 된다.
 
-    [day summary]
+        네트워크(client) <-> 서버(client) - binding(IP/Port)) 
+        - 만약 사설 IP로 서버를 구축하면
+        - 사설ip:포트 192.168.0.9:8080 일때 방화벽 에서 192.168.0.9:8080 를 허용해주고 기다려야 한다.
+    
+    5. 시나리오
+        - 집에서 server를 구축한다.(웹서버, jupyter server)
+        1. 집에서 구착한 server ip 주소 확인
+            - IP가 공인: 그냥사용
+            - IP가 사설: 공유기의 포트포워딩 테이블 작성 (외부에 노출시킬 포트, 내부의 ip, 내부의 포트)
+        2. sever에서
+            1. 방확벽 allow(사설/공인의 ip port)
+            - service를 가동하고 대기
+    
+# Day summary
+1. 20230223
     - IP 분류 -> class별 분류 -> IP 부족: 각 class 마다 사설 IP 할당
     - 사설: 내부만 사용
     - 공인: 외부와 통신할때만 사용
     - 사설 IP를 외부와 통신하기위해 NAT(NPAT)사용
     - 외부에서 사설 IP에 접근하기 위해서 protforwarding 사용
     
-    
-
+# Q&A
+1. TCP/UDP는 뭘까, port번호마다 용도가 있고, 해당번호에 TCP/UDP가 옵션처럼 달려 있는것 같다.
+    - 
 
 
 

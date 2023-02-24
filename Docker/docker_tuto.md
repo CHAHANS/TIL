@@ -73,7 +73,7 @@
 
     (3) 접속
     ```
-    sudo docker attach <CONTAINER NAME/ID>
+    sudo docker attach <CONTAINER NAME/ID>s
     ```
     (4) 실행
     ```
@@ -83,6 +83,63 @@
     ```
     sudo docker create ~~
     ```
+
+5. 메세지 주고받아보기
+    ```
+    sudo service docker start
+    ```
+    1. 메인터미널(서버)
+        
+        ```
+        sudo docker start <name>
+        sudo docker attach <name>
+        apt-get update
+        apt-get install python3
+        ```
+        ```
+        #ip 확인, python 실행
+        ipconfig
+        python3
+        ```
+        ```python
+        from socket import *
+        svrsock =socket(AF_INET, SOCK_DGRAM)
+        svrsock.bind('<IP주소>', 5000) #포트를 열고 대기
+        ```
+        ```python
+        #메세지 받기: 1024는 저장될 공간
+        msg, addr = svrsock.recvfrom(1024)
+        print(msg)
+        print(addr) #클라리언트가 지정하지 않고 생성된 랜덤 포트를 확인할 수 있다.
+        #한글을 받을 때 decode 필요
+        msg.decode()
+        ```
+        ```python
+        #메세지 응답
+        svrsock.sendto('<응답메세지>'.encode, addr)
+        ```
+    2. 추가터미널(클라이언트)
+        ```
+        sudo docker start <name2>
+        sudo docker attach <name2>
+        apt-get update
+        apt-get install python3
+        ```
+        ```
+        #ip 확인, python 실행
+        ipconfig
+        python3
+        ```
+        ```python
+        from socket import *
+        svrsock =socket(AF_INET, SOCK_DGRAM)
+        svrsock.sendto('<내가보낼 메시지>'.encode()), ('<IP주소>', 5000)
+        ```
+        ```python
+        #응답받기 
+        msg, addr = svrsock.recvfrom(1024)
+        msg.decode()
+        ```
 
 
 *컨테이런란?
