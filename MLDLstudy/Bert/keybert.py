@@ -11,7 +11,6 @@ doc="""
 내일의 내가 오늘의 나에게 고마워 할 수 있도록 오늘도 후회가 없는 날이 되도록 해야겠다.
 """
 
-
 model = KeyBERT('distilbert-base-nli-mean-tokens')
 keywords = model.extract_keywords(doc,keyphrase_ngram_range=(1,2),stop_words=None)
 
