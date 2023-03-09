@@ -51,6 +51,4 @@
     - 이밖에도 tensorflow 등 다양한 패키지에서 임베딩이 가능하도록 제공하고 있다.
     - 이수안컴퓨터연구소 영상으로 기초 강의를 들으면 이해가 편하다 [유튜브링크](https://www.youtube.com/watch?v=hR8Rvp-YNGg)
 
-## 그래서..  Image랑 Text embedding을 unet으로 엮은거냐고
-    
 
