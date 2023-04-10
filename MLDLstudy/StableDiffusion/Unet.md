@@ -16,8 +16,7 @@
 2. Unet의 핵심 아이디어: Skip Architecture(connetcion)
 - 매번 un-conv step마다 Contracting path의 feature map을 expanding path feature map 크기에 맞춰 crop 한 뒤 붙인다.
 
-3. Sequential layer를 대략적으로 보면
-아직 torch가 약해서 이분걸로 공부해보려 한다.
+3. Sequential layer
 [포스팅](https://hyunlee103.tistory.com/57)
 
 # stable diffusion에서 어떻게 사용되는가?
@@ -26,9 +25,8 @@
     1. scheduler algorithm
     - 해환123님의 T스토리 설명으로는 PNDM(기본)/DDIM/K-LMS가 주로 사용된다 한다.
     - 흔히 알고있는 OS에서의 scheduler algorithm? 아니면 Learning rate scheduler와는 다른건가? -> NO
+    - stable diffusion의 구조를 보면 VAE + Diffusion이라 볼 수 있다? 노이즈를 더하는 과정을 여러번에 나눠 적용하는 알고리즘? 으로 이해했다.
 
     2. Pseudo numerical methods for diffusion models(PNDM) 
     [huggingapi](https://huggingface.co/docs/diffusers/api/schedulers/pndm)
     - diffusers git을 clone하면 다양한 schedulers를 볼 수 있었다. [깃](https://github.com/huggingface/diffusers/blob/main/src/diffusers/schedulers/scheduling_pndm.py)
-    - 왜케 어렵지 ㅋㅋ  
-
