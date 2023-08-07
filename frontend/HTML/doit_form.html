@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form 기본형? -->
+    <form action="search.php" method="post"> 
+    <!-- autocomplete="off"> -->
+        <label for="search">검색기능</label>
+        <input id="search" type="text" title="검색">
+        <input type="submit" value="검색">
+    </form>
+
+    <!-- 체크박스 -->
+    <h3>체크박스 테스트</h3>
+    <ul>
+        <li><input type="checkbox" value="a">A</li>
+        <li><input type="checkbox" value="b">B</li>
+        <li><input type="checkbox" value="c">C</li>
+    </ul>
+    <h3>1개만 선택하기</h3>
+    <!-- radio의 name속성 값이 같으면 중복체크 불가능 -->
+    <ul>
+        <li><label><input type="radio" name="subject" value="a">A</label></li>
+        <li><label><input type="radio" name="subject" value="b">B</label></li>
+        <li><label><input type="radio" name="subject" value="c">C</label></li>
+    </ul>
+
+    <!-- form요소별 그룹으루 묶기 -->
+    <form>
+        <fieldset>
+            <legend>form 1번</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="age">나이</label>
+                    <input type="text" id="age">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>form 2번</legend>
+            <ul>
+                <li>
+                    <label for="menu">메뉴</label>
+                    <input type="text" id="menu">
+                </li>
+                <li>
+                    <label for="price">가격</label>
+                    <input type="text" id="price">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <!-- input type -->
+    <form>
+        <fieldset>
+            <legend>input type 연습 1</legend>
+            <label for="id">ID<input type="text" id="id"></label>
+            <label for="id">PW</label>
+            <input type="password" id="password">
+            <input type="submit" method="POST" value="제출하기">
+            <input type="hidden" value="Y">
+        </fieldset>
+        <fieldset>
+            <legend>input type 연습 2</legend>
+            <input type="search">
+            <input type="submit" value="검색">
+        </fieldset>
+        <fieldset>
+            <legend>input type 연습 3</legend>
+            <input type="url" autofocus required placeholder="url입력창 autofocus requeired">
+            <input type="email" readonly placeholder="읽기전용">
+            <input type="tel">
+            <!-- 구분지어 사용할 이유가 있나.. 가상키보드 키배열이 바뀌네 -->
+        </fieldset>
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="member" calss="reg"></label>
+                    <input type="number" id="member" value="1" min="0" max="10" setp="1">
+                </li>
+                <li>
+                    <label calss="reg" for="stuffs"></label>
+                    <input type="number" id="stuffs" value="1" min="0" max="50">
+                </li>
+                <li>
+                    <label calss="reg" for="satis"></label>
+                    <input id="satis" type="range" value=25 min="1" max="50">
+                </li>
+                <li>
+                    <input type="color" value="#00ff00">
+                </li>
+                <li>
+                    <input type="time">
+                    <input type="date">
+                    <input type="month">
+                    <input type="week">
+                    <input type="datetime-local" value="2023-01-01T14:00">
+                    <input type="submit">
+                    <input type="reset">
+                    <input type="image" id="butt" src="url" alt="urlsubmit">
+                </li>
+            </ul>
+        </fieldset>
+        <!-- submit 사용시 form 단위로 제출되는 듯 fieldset안에 넣어도 form 전체가 날아감 -->
+    </form>
+    
+
+</body>
+</html>

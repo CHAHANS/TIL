@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .movex:hover {
+            transform: translateX(50px);
+        }
+        .movey:hover {
+            transform: translateY(20px);
+        }
+        .movexy:hover {
+            transform: translate(10px, 20px);
+        }
+        .scalex:hover {
+            transform: scaleX(1.2);
+        }
+        .scaley:hover {
+            transform: scaleY(1.5);
+        }
+        .scale:hover {
+            transform: scale(0.7);
+        }
+        .origin2{perspective:200px}
+        .rotate1:hover{transform:rotate(20deg);}
+        .rotate2:hover{transform:rotate(-20deg);}
+        .rotatex{transform:rotateX(45deg);}
+        .rotatey{transform:rotateY(45deg);}
+        .rotatez{transform:rotateZ(45deg);}
+        .rotatexyz{transform:rotate3d(2.5,1.2,-1.5, 45deg);}
+    </style>
+</head>
+<body>
+    <!-- 이동 -->
+    <div class="origin">
+        <div class="movex"><img src="cup-1.jpg"></div>
+    </div>
+    <div class="origin">
+        <div class="movey"><img src="cup-1.jpg"></div>
+    </div>
+    <div class="origin">
+        <div class="movexy"><img src="cup-1.jpg"></div>
+    </div>
+    <!-- 확대축소 -->
+    <div class="origin">
+        <div class="scalex"><img src="cup-1.jpg"></div>
+    </div>
+    <div class="origin">
+        <div class="scaley"><img src="cup-1.jpg"></div>
+    </div>
+    <div class="origin">
+        <div class="scale"><img src="cup-1.jpg"></div>
+    </div>
+    <!-- 회전 -->
+    <div class="origin">
+        <div class="rotate1"><img src="cup-1.jpg"></div>
+    </div>
+    <div class="origin">
+        <div class="rotate2"><img src="cup-1.jpg"></div>
+    </div>
+    <!-- 회전2 어지럽네 -->
+    <div class="origin2">
+        <div class="rotatex"><img src="cup-1.jpg"></div>
+    </div>
+    <div class="origin2">
+        <div class="rotatey"><img src="cup-1.jpg"></div>
+    </div>
+    <div class="origin2">
+        <div class="rotatez"><img src="cup-1.jpg"></div>
+    </div>
+    <div class="origin2">
+        <div class="rotatexyz"><img src="cup-1.jpg"></div>
+    </div>
+</body>
+</html>
