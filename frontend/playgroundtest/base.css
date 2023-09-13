@@ -1,0 +1,52 @@
+/* 생상표 참고 https://at-corner.tistory.com/17 */
+:root{
+    --header-background-color:#000000;;
+    --main-background-color:#828282;
+    --text-color:#f0f4f5;
+}
+div {
+  display: block;
+}
+div #header{
+  padding-top:10px;
+  background-color: var(--header-background-color);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+  }
+.navbar a {
+    color:#f0f4f5
+}
+
+img .logo{
+  width:100px; height:50px;
+
+}
+
+
+body { 
+  margin: 0;
+  background-color: var(--main-background-color);
+}
+.navbar_menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+.navbar_menu li {
+padding: 8px 30px;
+border-left: 3px solid white;
+}
+
+img {
+  display: block;
+  width:100px;
+  margin-left: auto;
+  margin-right:auto;
+  align-items: center;
+}
