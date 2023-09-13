@@ -10,5 +10,14 @@
     3. Schedulers: 노이즈/이미지 생성과 훈련에 사용되는 기술
 
 2. 원리
+    1. Latent vector 생성
+    2. unet
+    3. text conditioning -> unet
+    4. vae
+    
 
 3. 학습시키기 -> 구조 파악
+- [그림으로이해하기](https://velog.io/@hammerimpact/%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-Stable-Diffusion-%EB%B2%88%EC%97%AD)
+
+1. text clip으로 image
+![img](https://velog.velcdn.com/images/hammerimpact/post/0b04c06a-6484-4a78-aca2-a700a77428ae/image.png)
