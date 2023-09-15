@@ -1,0 +1,84 @@
+/* 루트 */
+:root{
+  /* 생상표 참고 https://at-corner.tistory.com/17 */
+    --header-background-color:black;
+    --container-background-color:#16191b;
+    --body-background-color:black;
+}
+
+/* 공통 */
+body{
+  margin: 0%;
+  padding:0%;
+}
+
+img {
+  display: block;
+  width:100px;
+  margin-left: auto;
+  margin-right:auto;
+  align-items: center;
+}
+
+/* header 쪽 */
+div#header{
+  display:flex;
+  height: 50px;
+  background-color: var(--header-background-color);
+}
+
+/* 네이게이션 */
+img .logo{
+  width:100px; height:50px;
+
+}
+
+.navbar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 50px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  }
+.navbar a {
+    color:#f0f4f5
+}
+.navbar_menu li {
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  }
+
+/* container 쪽 */
+div#container {
+  z-index:0;
+  margin-left: 200px;
+  width:100%;
+  height: 1000px;
+  background-color: var(--container-background-color);
+}
+div#container_padding{
+  background-color:var(--container-background-color);
+}
+
+div#check_1 {
+  position: absolute;
+  margin:50px;
+  z-index:3;
+  height:100px;
+  width:200px;
+  background-color:red;
+}
+
+div#checker {
+  margin:auto;
+  background-color: blue;
+  position:absolute;
+  z-index:4;
+  height: 50px;
+  width:50px;
+}
+

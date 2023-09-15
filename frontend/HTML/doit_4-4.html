@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <label class="reg" for="habby">취미</label><br>
+
+        <select size="5" id="habby" multiple>
+            <optgroup label="구기종목">
+                <option value="a">축구</option>
+                <option value="b" selected>농구</option>
+                <option value="c">배구</option>
+                <option value="d">야구</option>
+                <option value="e">탁구</option>
+                <option value="f">당구</option>
+            </optgroup>
+            <optgroup label="게임">
+                <option value="a">롤</option>
+                <option value="b">피파</option>
+                <option value="c">스타</option>
+                <option value="d">배그</option>
+                <option value="e">로아</option>
+                <option value="f">크아</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset>
+        <form>
+            <label for="test_1">단계설정</label><br>
+            <select size="3" id="level">
+                <option value="beginning">초급</option>
+                <option value="midium">중급</option>
+                <option value="premium">고급</option>
+            </select>
+            <input type="submit" method="POST" value="제출">
+        </form>
+    </fieldset>
+    <fieldset>
+        <input type="text" id="interest" list="choices">
+        <datalist id="choices">
+            <option value="grammar" label="문법">여기는? 노출없네</option>
+            <option value="voca" label="어휘"></option>
+            <option value="news" label="뉴스청취"></option>
+        </datalist>
+    </fieldset>
+    
+</body>
+</html>
