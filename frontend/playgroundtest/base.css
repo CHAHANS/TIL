@@ -8,8 +8,8 @@
 
 /* 공통 */
 body{
-  margin: 0%;
-  padding:0%;
+  margin:0;
+  padding:0;
 }
 
 img {
@@ -21,7 +21,7 @@ img {
 }
 
 /* header 쪽 */
-div#header{
+div.header{
   display:flex;
   height: 50px;
   background-color: var(--header-background-color);
@@ -38,7 +38,7 @@ img .logo{
   width: 200px;
   position: fixed;
   z-index: 1;
-  top: 50px;
+  top: 0;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
@@ -53,32 +53,32 @@ img .logo{
   }
 
 /* container 쪽 */
-div#container {
+div.container {
   z-index:0;
   margin-left: 200px;
   width:100%;
   height: 1000px;
   background-color: var(--container-background-color);
 }
-div#container_padding{
-  background-color:var(--container-background-color);
+div.container_padding{
+  padding-top:25px;
+  padding-left:25px;
+  width:1000px
+
 }
 
-div#check_1 {
-  position: absolute;
-  margin:50px;
-  z-index:3;
+div#days {
+  float:left;
+  margin:5px;
   height:100px;
   width:200px;
   background-color:red;
 }
 
-div#checker {
-  margin:auto;
-  background-color: blue;
-  position:absolute;
-  z-index:4;
-  height: 50px;
-  width:50px;
+div#days_end {
+  float:right;
+  margin:5px;
+  height:100px;
+  width:200px;
+  background-color:green;
 }
-
