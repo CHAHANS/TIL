@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일정 저장하기</title>
+    <style>
+        fieldset{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>일일목표 넣기</legend>
+            <ul style="list-style-type:none">
+                <li>
+                    <label for="to_date">설정일자</label>
+                    <input type="date" id="to_date">
+                </li>
+                <li>
+                    <label for="day_goal">목표</label>
+                    <textarea id="day_goal"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <button>추가입력</button>
+        <button>저장</button>
+    </form>
+</body>
+</html>

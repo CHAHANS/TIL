@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일주일 일정 조회하기</title>
+    <!-- <link rel="stylesheet" href="calender_week.css"> -->
+    <!-- style 연습 후 마지막에 취합하자. -->
+    <style>
+        .days{
+            padding:10px;
+            width:1000px;
+            height:2000px;
+            background-color: blue;
+            display:flex;
+        }
+        .day{
+            margin:0;
+
+            border-style: solid;
+            border-width:1px;
+
+            width: 150px;
+            height: 100%px;
+            background-color: pink;
+
+            text-align: center;
+        }
+        div {
+            display:block;
+        }
+        
+        .contentbox {
+            margin:10px 5px 0px 5px;
+            border-style:solid;
+            border-width: 1px;
+            border-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <input type=date id="start"><button>새로고침</button>
+    <div class="days">
+        <div class="day">일
+            <div class="contentbox">
+                들어감?
+            </div>
+            <div class="contentbox">
+                또 들어감?
+            </div>
+            <div class="contentbox">
+                계속 들어감?
+            </div>
+            <div class="contentbox">
+                스크립트로 갯수 맞춰서 만들어주면 되나, 문장이 길어지면 보기 더럽나?
+            </div>
+            <div class="contentbox">
+                클릭하면 상태 바꿔서 저장해줘야 겠는데
+            </div>
+        </div>
+        <div class="day">월
+
+        </div>
+        <div class="day">화
+
+        </div>
+        <div class="day">수
+
+        </div>
+        <div class="day">목
+
+        </div>
+        <div class="day">금
+
+        </div>
+        <div class="day">토
+
+        </div>
+    </div>
+
+</body>
+</html>
